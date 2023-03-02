@@ -18,16 +18,14 @@ def take_input(List):
                 
 
 def squares_sum():
-    #Lst = []   # uncomment this line if take_inputs
-    input_numbers = [1,2,4,6,8,10]
+    Lst = []
     Sum = 0
-    # uncomment the line below if wanting to take user inputs
-    #take_input(Lst)
+    take_input(Lst)
     
-    for i in input_numbers: # Lst if take_inputs
+    for i in Lst:
         Sum += i**2
 
-    return Sum
+    return Lst, Sum
 
-result = squares_sum()
-print(result)
+numbers, result = squares_sum()
+print("Sum of %s squares: %s"%(numbers, result))
